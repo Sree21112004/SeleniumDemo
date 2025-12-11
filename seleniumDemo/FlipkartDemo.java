@@ -32,16 +32,16 @@ public class FlipkartDemo {
 		WebElement enter = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/header/div[1]/div[2]/form/div/button"));
 		enter.click();
 		
-		List<WebElement> details = new ArrayList<>();
-		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[2]")));
-		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[3]/span[2]/span")));
-		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[2]")));
-		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[3]/span[2]/span"))); 
-		for(WebElement ele : details) {
-		    System.out.println(ele.getText());
-		}
-		System.out.println();
-		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
+//		List<WebElement> details = new ArrayList<>();
+//		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[2]")));
+//		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[2]/div/div/div/a/div[2]/div[1]/div[3]/span[2]/span")));
+//		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[2]")));
+//		details.add(driver.findElement(By.xpath("/html/body/div/div/div[3]/div[1]/div[2]/div[3]/div/div/div/a/div[2]/div[1]/div[3]/span[2]/span"))); 
+//		for(WebElement ele : details) {
+//		    System.out.println(ele.getText());
+//		}
+//		System.out.println();
+//		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
 		// //div[text()='Java'] -> custom xPath
 		// //input[@value='radio2'] -> another custom xPath
 		// //span[starts-with(@id,'u_0_d')]
