@@ -41,7 +41,7 @@ public class FlipkartDemo {
 //		    System.out.println(ele.getText());
 //		}
 //		System.out.println();
-//		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
+		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
 		// //div[text()='Java'] -> custom xPath
 		// //input[@value='radio2'] -> another custom xPath
 		// //span[starts-with(@id,'u_0_d')]
