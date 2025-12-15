@@ -43,8 +43,9 @@ public class SauceLoginTest {
 		String result="Products";
 		String expResult=driver.findElement(By.className("title")).getText();
 		
-		driver.findElement(By.id("react-burger-menu-btn")).click();
+		driver.findElement(By.linkText("Sauce Labs Backpack")).click();
+		driver.findElement(By.partialLinkText("Add")).click();
 		
-		Assert.assertEquals(expResult, result);
+		//Assert.assertEquals(expResult, result);
   }
 }

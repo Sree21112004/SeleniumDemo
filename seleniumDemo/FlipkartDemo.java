@@ -1,8 +1,7 @@
 package seleniumDemo;
 
-import java.util.ArrayList;
+import java.time.Duration;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.openqa.selenium.By;
@@ -10,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FlipkartDemo {
 
@@ -25,7 +26,8 @@ public class FlipkartDemo {
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.flipkart.com/");
 		driver.manage().window().maximize();
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
 		WebElement search = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div/div/div/div/div/div/div/div/div[1]/div/div/header/div[1]/div[2]/form/div/div/input"));
 		search.sendKeys("mobiles");
 		
@@ -41,7 +43,9 @@ public class FlipkartDemo {
 //		    System.out.println(ele.getText());
 //		}
 //		System.out.println();
-//		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
+		driver.findElement(By.partialLinkText("Samsung Galaxy")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Login")));
+		driver.findElement(By.className("EyyvSj")).click();
 		// //div[text()='Java'] -> custom xPath
 		// //input[@value='radio2'] -> another custom xPath
 		// //span[starts-with(@id,'u_0_d')]

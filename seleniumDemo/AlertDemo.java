@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class AlertDemo {
   @Test
-  public void f() {
+  public void f() throws InterruptedException {
 	  WebDriver driver = new ChromeDriver();
       driver.manage().window().maximize();
       driver.get("https://the-internet.herokuapp.com/javascript_alerts");
@@ -16,6 +16,7 @@ public class AlertDemo {
       driver.findElement(By.xpath("//ul/li[3]/button")).click();
       Alert alert = driver.switchTo().alert();
       alert.sendKeys("Demo");
+      Thread.sleep(10000);
       alert.accept();
   }
 }

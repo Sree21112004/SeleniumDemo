@@ -27,7 +27,7 @@ public class LocatorsIDName{
 		//driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		
 		//short-cut to enter user-name
-		WebElement usrName = driver.findElement(By.id("user-name"));
+		WebElement usrName = driver.findElement(By.cssSelector("#user-name"));
 		usrName.sendKeys("standard_user");
 		
 		//to enter password
@@ -45,7 +45,7 @@ public class LocatorsIDName{
 			System.out.println("Failed");
 		}
 		
-		driver.findElement(By.id("react-burger-menu-btn")).click();
+		driver.findElement(By.cssSelector(".product_sort_container")).click();
 	}
 
 }
