@@ -1,4 +1,4 @@
-package testNgDemo;
+package dataProviderDemo;
 
 import java.time.Duration;
 
@@ -35,12 +35,12 @@ public class DataProviderDemo{
 		search.clear();
 		search.sendKeys(bookName);
 		search.sendKeys(Keys.ENTER);
-
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("preferences-show")));
 		System.out.println(driver.findElement(By.className("preferences-show")).getText());
 
 		Select sort = new Select(driver.findElement(By.id("ddlSort")));
 		sort.selectByVisibleText(sortBy);
-
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("preferences-show")));
 //	  List<WebElement> results = driver.findElements(By.className("list-view-books"));
 //	  System.out.println(results.size());
 //	  while(n <= results.size()) {

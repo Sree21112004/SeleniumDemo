@@ -14,6 +14,6 @@ public class FramesDemo {
 	  System.out.println(driver.findElements(By.tagName("frame")).size());
 	  System.out.println("Current Frame: "+driver.findElement(By.tagName("frame")).getDomAttribute("src"));
 	  driver.switchTo().window("classFrame");
-	  System.out.println(driver.findElement(By.xPath((//td[@class='colFirst']/a)[1]));
+	  System.out.println(driver.findElement(By.xpath("//td[@class='colFirst']/a)[1]")).getText());
 	  }
 }
