@@ -1,4 +1,4 @@
-package seleniumDemo;
+package waitPrgms;
 
 import java.time.Duration;
 import java.util.Set;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class FlipkartSearch {
+public class ExplicitWaitDemo {
   @Test
   public void f() {
 	  WebDriver driver = new ChromeDriver();

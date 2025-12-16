@@ -43,13 +43,10 @@ public class FlipkartDemo {
 //		    System.out.println(ele.getText());
 //		}
 //		System.out.println();
-<<<<<<< HEAD
 		driver.findElement(By.partialLinkText("Samsung Galaxy")).click();
 		wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Login")));
 		driver.findElement(By.className("EyyvSj")).click();
-=======
 		driver.findElement(By.partialLinkText("Google Pixel 10 Pro")).click();
->>>>>>> 4293ebf7554d4e848abd61bc9b1e88bf0e79c8fd
 		// //div[text()='Java'] -> custom xPath
 		// //input[@value='radio2'] -> another custom xPath
 		// //span[starts-with(@id,'u_0_d')]

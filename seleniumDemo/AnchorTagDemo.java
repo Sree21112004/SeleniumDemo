@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class AnchorTest {
+public class AnchorTagDemo {
 
     @Test
     public void f() {
