@@ -1,7 +1,5 @@
 package seleniumDemo;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -46,6 +44,6 @@ public class SauceLoginTest {
 		driver.findElement(By.linkText("Sauce Labs Backpack")).click();
 		driver.findElement(By.partialLinkText("Add")).click();
 		
-		//Assert.assertEquals(expResult, result);
+		Assert.assertEquals(expResult, result);
   }
 }
