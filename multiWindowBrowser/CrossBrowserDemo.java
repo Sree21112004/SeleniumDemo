@@ -1,4 +1,4 @@
-package seleniumDemo;
+package multiWindowBrowser;
 
 import java.util.Scanner;
 

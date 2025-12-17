@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class FlipkartDemo {
+public class PopupOff {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
