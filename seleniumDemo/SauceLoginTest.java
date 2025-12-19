@@ -11,6 +11,10 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class SauceLoginTest {
   @Test
   public void f() {
@@ -20,6 +24,10 @@ public class SauceLoginTest {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setExperimentalOption("prefs", prefs);
+		
+		ExtentSparkReporter extSparkReporter;
+		ExtentReports extReports;
+		ExtentTest extTest;
 		
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.saucedemo.com/");
